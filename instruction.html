@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructions</title>
+    <link rel="stylesheet" href="CSS/instructions.css">
+</head>
+<body>
+
+    <header>
+        <video id="video-background-instructions" autoplay muted loop>
+            <source src="videos/instructions.mp4" type="video/mp4">
+        </video>
+        <h1 class="heading">Instructions to play Dragon Leap!</h1>
+    </header>
+    <!-- The header section with a video background and the heading -->
+
+    <main>
+        <div class="instructions">
+            <ul>
+                <li>The game will begin with the dragon positioned at the starting point.</li>
+                <li>As the game progresses, obstacles will appear on the screen, moving towards the dragon.</li>
+                <li>Your goal is to help the dragon leap over these obstacles.</li>
+                <li>You can move the dragon by left, right and Up key of keyboard.</li>
+                <li>Each successful jump over an obstacle will earn you points, increasing your score. Aim to accumulate as many points as possible.</li>
+                <li>Be careful not to let the dragon collide with any obstacles. If the dragon hits an obstacle, the game will end.</li>
+                <li>As you continue playing, the speed of the obstacles will gradually increase, making the game more challenging. </li>
+                <li>Remember, practice makes perfect! With time and experience, you'll improve your reflexes and timing.</li>
+            </ul>
+        </div>
+        <!-- Instructions section with a list of gameplay instructions -->
+        
+        <div class="btn">
+            <button onclick="redirectToGamePage()" class="play"> Play Now</button>
+        </div>
+        <!-- Button section with a "Play Now" button -->
+    </main>
+    <script src="instructions.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragan Leap</title>
+    <link rel="stylesheet" href="CSS/intro.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <video id="video-background" autoplay muted loop>
+            <source src="videos/intovideo.mp4" type="video/mp4">
+        </video>
+        <!-- Video background element for the intro section -->
+
+        <h1 class="heading animated-heading">Welcome to Dragon Leap</h1>
+         <!-- Animated heading element for the intro section -->
+
+        <div  class="info-form">
+            <!-- Form section for player information -->
+            
+            <div class="name-info">
+                <div id="playerName">
+                    <label for="name">Enter your Name: </label>
+                    <br>
+                    <input type="text" class="text-input" id="nameInput">
+                </div>
+                <div id="nickname">
+                    <label for="nickname">Enter your NickName: </label>
+                    <br>
+                    <input type="text" class="text-input" id="nicknameInput">
+                </div>
+
+            </div>
+            <button onclick="redirectToInstructionsPage()" class="startBtn">See Instructions</button>
+             <!-- "See Instructions" button to redirect to the instructions page -->
+             
+        </div>
+        
+    </div>
+    <script src="intro.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* Resetting margins and padding for all elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Hiding scrollbars */
+body{
+    overflow: hidden;
+    
+}
+
+/* Styling for the heading section */
+.heading{
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-family: sans-serif;
+    font-size: 60px ;
+    color: white;
+}
+
+/* Styling for unordered lists */
+ul{
+    position: relative;
+    top: 153px;
+    
+    font-size: 22px;
+    padding: 10px;
+    text-align: justify;
+    color: white;
+}
+li{
+    padding: 5px;
+}
+
+/* Styling for the video background in the instructions section */
+#video-background-instructions {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+.play{
+    font-size: 37px;
+    border-radius: 15px;
+    position: relative;
+    top: 150px;
+    
+    padding: 10px;
+}
+.instructions{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+
+ /* Media query for screens with a maximum width of 375px */
+@media screen and (max-width:375px){
+    body{
+      overflow: hidden;
+      
+    }
+    .heading{
+      width: 850px;
+      
+    }
+    ul{
+        position: relative;
+        left: 250px;
+       
+    }
+    .play{
+        position: relative;
+        left: 319px;
+    }
+  
+    
+  
+  }

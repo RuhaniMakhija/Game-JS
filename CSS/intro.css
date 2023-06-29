@@ -1,0 +1,142 @@
+/* Resetting margins and padding for all elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Hiding scrollbars */
+body{
+    overflow: hidden;
+}
+
+/* Styling for the heading section */
+.heading{
+    color: rgb(253, 253, 253);
+    text-align: center;
+    position: relative;
+    top: 120px;
+    font-family: sans-serif;
+    font-size: 60px ;
+}
+
+/* Styling for the info form section */
+.info-form{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+#playerName{
+    
+    margin-bottom: 50px;
+    font-size: 24px;
+   
+}
+
+#nickname{
+    font-size: 24px;
+}
+.text-input{
+    width: 223px;
+    height: 20px;
+
+}
+
+/* Styling for the video background element */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+/* Animation for the heading element */
+.animated-heading{
+    animation: slide-in 1s ease-in-out forwards;
+}
+.player{
+    animation: slide-in 1s ease-in-out forwards;
+
+}
+
+.animated-text {
+    animation: text-scale 3s;
+  }
+
+  .animated-text {
+    animation-fill-mode: forwards;
+  }
+.startBtn{
+    font-size: 37px;
+    border-radius: 15px;
+    position: relative;
+    top: 32px;
+    padding: 10px;
+}
+
+.newElementClass{
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 700px;
+}
+
+
+/* Keyframes animation for sliding in elements */
+@keyframes slide-in {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+/* Keyframes animation for scaling text */
+@keyframes text-scale {
+  0% {
+    font-size: 24px;
+  }
+  
+  100% {
+    font-size: 40px;
+  }
+}
+  
+
+@media screen and (max-width:375px){
+  body{
+    overflow: hidden;
+    
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .heading{
+    width: 850px;
+    
+  }
+
+  .info-form{
+    position: relative;
+    text-align: center;
+    left: 196px;
+    margin-top: 30px;
+  }
+
+  label{
+    font-size: 60px;
+  }
+
+}
+ 
+  
+  
